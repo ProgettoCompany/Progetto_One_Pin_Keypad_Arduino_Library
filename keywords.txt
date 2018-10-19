@@ -1,0 +1,5 @@
+OnePinKeypad	KEYWORD1
+readKeypadInstantaneous		KEYWORD2
+readKeypadWithTimeout		KEYWORD2
+useCalibratedThresholds		KEYWORD2
+NO_TIMEOUT	LITERAL1
