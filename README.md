@@ -10,5 +10,6 @@ Arduino Library for the One Pin Keypad, a device that simplifies the use of 16 b
 * [Eagle CAD Files](https://github.com/ProgettoCompany/One_Pin_Keypad_Eagle_Files)
 ## License Information:
 This product is open source, the **code** is licensed under the MIT License.
+Distributed as-is; no warranty is given.
 ## Contact:
 Email us at progettocompany@gmail.com if you have any questions or concerns.
