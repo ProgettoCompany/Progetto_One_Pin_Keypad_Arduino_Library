@@ -1,4 +1,4 @@
-# One Pin Keypad Arduino Library
+# Progetto One Pin Keypad Arduino Library
 Arduino Library for the One Pin Keypad, a device that simplifies the use of 16 button matrix keypads.
 ## How to navigate this repository
 * **/examples** - Example sketches for the Arduino library (.ino file type).
