@@ -9,5 +9,5 @@ Design files and Arduino Library for the One Pin Keypad, a board that simplifies
 * [Instructables tutorial](https://www.instructables.com/)
 ## License Information:
 The **code** is licensed under the MIT License, the **hardware** is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
-## Contact
+## Contact:
 Email us at progettocompany@gmail.com if you have any questions or concerns.
