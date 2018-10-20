@@ -10,7 +10,7 @@ OnePinKeypad keypad(pin);
 int timeout = 5000;
 
 // Insert your calibrated array here:
-// ex: uint16_t myThresholds[16] = {calibrated values would be here}
+// ex: int myThresholds[16] = {calibrated values would be here}
 
 // The setup routine runs once when you press reset:
 void setup() {
