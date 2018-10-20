@@ -63,7 +63,7 @@ void setup() {
   Serial.begin(9600);
   delay(10);
 
-  Serial.println("\nKeypad Calibration for Progetto OnePinKeypad Boards:");
+  Serial.println("\nKeypad Calibration for Progetto One Pin Keypad Boards:");
   Serial.println("Please note: for your convenience a tolerance is used ");
   Serial.println("to avoid bad values from pressing the wrong button. ");
   Serial.println("Unfortunately, the analog values get closer and closer");
