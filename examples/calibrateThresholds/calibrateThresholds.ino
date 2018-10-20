@@ -7,7 +7,7 @@ int pin = A0;
 const char buttonIDs[16] = {'1', '2', '3', 'A', '4', '5', '6', 'B', '7', '8', '9', 'C', '*', '0', '#', 'D'};
 
 // default analog values that correspond to each button:
-uint16_t thresholds[16] = {
+int thresholds[16] = {
   10,   // 1
   110,  // 2
   155,  // 3
@@ -26,7 +26,7 @@ uint16_t thresholds[16] = {
   560   // D
 };
 
-uint16_t newThresholds[16];
+int newThresholds[16];
 
 int tolerance = 30;
 
@@ -43,8 +43,6 @@ void calibrateButton(char button, int arrayIndex) {
     if (analogRead(A0) > 1000); // no-op
     else {
       int buttonVal = analogRead(A0);
-//      Serial.print("buttonVal: ");
-//      Serial.println(buttonVal);
       int calibrationCheck = buttonVal - thresholds[arrayIndex];
       if (abs(calibrationCheck) <= tolerance) {
         Serial.print("Passed button analog value: ");
@@ -81,7 +79,7 @@ void setup() {
     delay(1000);
   }
   Serial.println("\nInsert the following line of code before void setup():");
-  Serial.print("uint16_t myThresholds[16] = {");
+  Serial.print("int myThresholds[16] = {");
   for (int thresholdsIndex = 0; thresholdsIndex < 15; thresholdsIndex++) {
     Serial.print(newThresholds[thresholdsIndex]);
     Serial.print(", ");
