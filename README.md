@@ -6,7 +6,7 @@ Arduino Library for the One Pin Keypad, a device that simplifies the use of 16 b
 * **keywords.txt** - Arduino IDE syntax highlighting.
 ## Documentation:
 * [Product Page](https://www.tindie.com/products/Progetto/one-pin-keypad/)
-* [Instructables tutorial](https://www.instructables.com/)
+* [Instructables tutorial](https://www.instructables.com/id/Meet-One-Pin-Keypad)
 * [Eagle CAD Files](https://github.com/ProgettoCompany/One_Pin_Keypad_Eagle_Files)
 ## License Information:
 This product is open source, the **code** is licensed under the [MIT License](https://opensource.org/licenses/MIT).
