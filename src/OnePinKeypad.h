@@ -1,6 +1,6 @@
 /***************************************************
   This is a library for the One Pin Keypad Board:
-  (Insert link here)
+  (https://www.tindie.com/products/Progetto/one-pin-keypad/)
   It supports 3x4 and 4x4 membrane keypads and outputs
   the key you pressed as a character, based on an
   analog value.
@@ -27,13 +27,13 @@ class OnePinKeypad
 	
     uint16_t analogValue;
 	
-	int16_t thresholdCheck = 20;
+    int16_t thresholdCheck = 20;
 	
     // Keypad char values (button names):
     const char buttonIDs[16] = {'1', '2', '3', 'A', '4', '5', '6', 'B', '7', '8', '9', 'C', '*', '0', '#', 'D'};
     char keyValue = '\0';
 	
-	// analog values that correspond to each button:
+    // analog values that correspond to each button:
     uint16_t thresholds[16] = {
       10,   // 1
       110,  // 2
