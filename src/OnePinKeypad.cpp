@@ -23,8 +23,7 @@ char OnePinKeypad::readKeypadInstantaneous() {
  
   // If no button is being pressed, return null
   if (analogValue > 1000) {
-      // no-op 
-	  keyValue = '\0';
+    keyValue = '\0';
   }
   else {  
 	  // Compare the input value to each threshold value
@@ -77,7 +76,7 @@ char OnePinKeypad::readKeypadWithTimeout(unsigned long timeout) {
         }
         break;
       }
-	  delay(10);
+      delay(10);
     }
   }
   
