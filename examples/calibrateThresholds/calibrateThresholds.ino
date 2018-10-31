@@ -28,7 +28,7 @@ int thresholds[16] = {
 
 int newThresholds[16];
 
-int tolerance = 30;
+int tolerance = 40;
 
 // Create a keypad object:
 OnePinKeypad keypad(pin);
