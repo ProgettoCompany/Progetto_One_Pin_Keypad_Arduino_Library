@@ -1,3 +1,6 @@
+// Details can be found here:
+// https://www.instructables.com/id/Meet-One-Pin-Keypad/
+
 #include <OnePinKeypad.h>
 
 // Define Analog Pin:
@@ -17,7 +20,7 @@ void setup() {
   // Initialize serial communication at 9600 bits per second:
   Serial.begin(9600);
   
-  // If calibrated values are being used, run useCalibratedThresholds(your array name) below:
+  // If calibrated values are being used, run keypad.useCalibratedThresholds(your array name) below:
 }
 
 // The loop routine runs over and over again forever:
