@@ -8,7 +8,7 @@ const char buttonIDs[16] = {'1', '2', '3', 'A', '4', '5', '6', 'B', '7', '8', '9
 
 // default analog values that correspond to each button:
 int thresholds[16] = {
-  10,   // 1
+  30,   // 1
   110,  // 2
   155,  // 3
   210,  // A
