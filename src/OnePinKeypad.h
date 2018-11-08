@@ -35,7 +35,7 @@ class OnePinKeypad
 	
     // analog values that correspond to each button:
     uint16_t thresholds[16] = {
-      30,   // 1
+      10,   // 1
       110,  // 2
       155,  // 3
       210,  // A
