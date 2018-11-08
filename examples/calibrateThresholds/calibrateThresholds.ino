@@ -1,3 +1,6 @@
+// Details can be found here:
+// https://www.instructables.com/id/Meet-One-Pin-Keypad/
+
 #include <OnePinKeypad.h>
 
 //Define Analog Pin:
