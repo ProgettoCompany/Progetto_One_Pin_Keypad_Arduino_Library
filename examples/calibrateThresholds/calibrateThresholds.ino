@@ -1,10 +1,13 @@
-// Details can be found here:
+// calibrateThresholds example sketch, details can be found here:
 // https://www.instructables.com/id/Meet-One-Pin-Keypad/
 
 #include <OnePinKeypad.h>
 
-//Define Analog Pin:
+// Define Analog Pin:
 int pin = A0;
+
+// Variable to store button being pressed:
+char keyValue;
 
 // Keypad button names:
 const char buttonIDs[16] = {'1', '2', '3', 'A', '4', '5', '6', 'B', '7', '8', '9', 'C', '*', '0', '#', 'D'};
@@ -109,7 +112,7 @@ void loop() {
   // Run the readKeypadWithTimeout function to determine which button is pressed within the timeout, in milliseconds
   // Store that value in the variable keyValue
   // If no timeout is desired, pass the NO_TIMEOUT constant as a parameter to readKeypadWithTimeout
-  char keyValue = keypad.readKeypadWithTimeout(NO_TIMEOUT);
+  keyValue = keypad.readKeypadWithTimeout(NO_TIMEOUT);
 
   // Print the key being pressed to Serial Monitor
   Serial.print("You pressed: ");
