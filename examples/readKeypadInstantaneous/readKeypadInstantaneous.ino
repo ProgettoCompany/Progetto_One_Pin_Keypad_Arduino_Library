@@ -1,10 +1,13 @@
-// Details can be found here:
+// readKeypadInstantaneous example sketch, details can be found here:
 // https://www.instructables.com/id/Meet-One-Pin-Keypad/
 
 #include <OnePinKeypad.h>
 
 // Define Analog Pin:
 int pin = A0;
+
+// Variable to store button being pressed:
+char keyValue;
 
 // Create a keypad object:
 OnePinKeypad keypad(pin);
@@ -24,7 +27,7 @@ void setup() {
 void loop() {
   // Run the readKeypadInstantaneous function to determine which button is currently being pressed
   // Store that value in the variable keyValue
-  char keyValue = keypad.readKeypadInstantaneous();
+  keyValue = keypad.readKeypadInstantaneous();
 
   // Print the key being pressed to Serial Monitor
   Serial.print("You pressed: ");
