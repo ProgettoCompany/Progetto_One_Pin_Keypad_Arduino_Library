@@ -1,10 +1,13 @@
-// Details can be found here:
+// readKeypadWithTimeout example sketch, details can be found here:
 // https://www.instructables.com/id/Meet-One-Pin-Keypad/
 
 #include <OnePinKeypad.h>
 
 // Define Analog Pin:
 int pin = A0;
+
+// Variable to store button being pressed:
+char keyValue;
 
 // Create a keypad object:
 OnePinKeypad keypad(pin);
@@ -28,7 +31,7 @@ void loop() {
   // Run the readKeypadWithTimeout function to determine which button is pressed within the timeout, in milliseconds
   // Store that value in the variable keyValue
   // If no timeout is desired, pass the NO_TIMEOUT constant as a parameter to readKeypadWithTimeout
-  char keyValue = keypad.readKeypadWithTimeout(timeout);
+  keyValue = keypad.readKeypadWithTimeout(timeout);
 
   // Print the key being pressed to Serial Monitor
   Serial.print("You pressed: ");
