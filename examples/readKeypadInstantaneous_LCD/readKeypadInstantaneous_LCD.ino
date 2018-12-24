@@ -3,6 +3,8 @@
 
 // Include the libraries:
 #include <LiquidCrystal.h>
+// Uncomment for I2C LCD (Source: https://bitbucket.org/fmalpartida/new-liquidcrystal/downloads/):
+// #include <LiquidCrystal_I2C.h>
 #include <OnePinKeypad.h>
 
 // Define Analog Pin:
@@ -18,6 +20,7 @@ OnePinKeypad keypad(pin);
 // with the arduino pin number it is connected to
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
 LiquidCrystal LCD(rs, en, d4, d5, d6, d7);
+// LiquidCrystal_I2C LCD(0x3F, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE); // use I2CScanner sketch to find I2C address
 
 // Insert your calibrated array here:
 // ex: int myThresholds[16] = {calibrated values would be here}
