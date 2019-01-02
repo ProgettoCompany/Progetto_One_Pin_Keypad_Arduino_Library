@@ -27,8 +27,7 @@ char OnePinKeypad::readKeypadInstantaneous() {
   }
   else {  
 	  // Compare the input value to each threshold value
-	  for (int i = 0; i < 16; i++)
-	  {
+	  for (int i = 0; i < 16; i++) {
 		// Check value against keypad thresholds
 		thresholdCheck = analogValue - thresholds[i];
 		if (abs(thresholdCheck) <= 7) {
@@ -62,7 +61,7 @@ char OnePinKeypad::readKeypadWithTimeout(unsigned long timeout) {
         }
         break;
       }
-	  delay(10);
+      delay(10);
     }
   }
   else {
