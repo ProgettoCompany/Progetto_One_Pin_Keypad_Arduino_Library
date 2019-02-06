@@ -20,10 +20,11 @@ void OnePinKeypad::useCalibratedThresholds(int calibratedThresholds[16]) {
 char OnePinKeypad::readKeypadInstantaneous() {
   // Read the input on analog pin 0
   analogValue = analogRead(_pin);
+  keyValue = '\0';
  
   // If no button is being pressed, return null
   if (analogValue > 1000) {
-    keyValue = '\0';
+    return keyValue;
   }
   else {  
 	  // Compare the input value to each threshold value
