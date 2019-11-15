@@ -46,9 +46,9 @@ void calibrateButton(char button, int arrayIndex) {
   delay(10);
   
   while (true) {
-    if (analogRead(A0) > 1000); // no-op
+    if (analogRead(pin) > 1000); // no-op
     else {
-      int buttonVal = analogRead(A0);
+      int buttonVal = analogRead(pin);
       int calibrationCheck = buttonVal - thresholds[arrayIndex];
       if (abs(calibrationCheck) <= tolerance) {
         Serial.print("Passed button analog value: ");
